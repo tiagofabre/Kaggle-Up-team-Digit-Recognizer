@@ -1,0 +1,5 @@
+iniciar treinamento
+[hiddenWeights,outputWeights, error, startTime, finalTime] = applyStochasticSquaredErrorTwoLayerPerceptronMNIST('teste',inputValuesKaggle,targetValuesKaggle);
+
+Gerar respostas para o kaggle
+[outputClassification] = validateTwoLayerPerceptron(activationFunction, hiddenWeights, outputWeights, kaggleTeste);
