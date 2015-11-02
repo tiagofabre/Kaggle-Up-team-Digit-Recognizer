@@ -30,7 +30,7 @@ function [hiddenWeights,outputWeights, error, startTime, finalTime, result] = ap
     
     % Choose batch size and epochs. Remember there are 60k input values.
     batchSize = 2000;
-    epochs = 15000;
+    epochs = 60000;
     
     fprintf('Train twolayer perceptron with %i hidden units.\n', numberOfHiddenUnits);
     fprintf('Learning rate: %d.\n', learningRate);
