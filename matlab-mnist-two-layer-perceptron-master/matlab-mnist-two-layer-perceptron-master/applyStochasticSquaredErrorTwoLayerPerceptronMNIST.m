@@ -19,7 +19,7 @@ function [hiddenWeights,outputWeights, error, startTime, finalTime, result] = ap
     end;
    
     % Choose form of MLP:
-    numberOfHiddenUnits = 100;
+    numberOfHiddenUnits = 700;
     
     % Choose appropriate parameters.
     learningRate = 0.05;
@@ -29,8 +29,8 @@ function [hiddenWeights,outputWeights, error, startTime, finalTime, result] = ap
     dActivationFunction = @dLogisticSigmoid;
     
     % Choose batch size and epochs. Remember there are 60k input values.
-    batchSize = 2000;
-    epochs = 60000;
+    batchSize = 28000;
+    epochs = 500;
     
     fprintf('Train twolayer perceptron with %i hidden units.\n', numberOfHiddenUnits);
     fprintf('Learning rate: %d.\n', learningRate);
