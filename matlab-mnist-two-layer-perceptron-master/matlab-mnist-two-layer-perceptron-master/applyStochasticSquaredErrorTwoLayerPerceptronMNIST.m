@@ -22,7 +22,7 @@ function [hiddenWeights,outputWeights,error] = applyStochasticSquaredErrorTwoLay
     numberOfHiddenUnits = 784;
     
     % Choose appropriate parameters.
-    learningRate = 0.02;
+    learningRate = 0.01;
     
     % Choose activation function.
     activationFunction = @logisticSigmoid;
@@ -30,7 +30,7 @@ function [hiddenWeights,outputWeights,error] = applyStochasticSquaredErrorTwoLay
     
     % Choose batch size and epochs. Remember there are 60k input values.
     batchSize = 42000;
-    epochs = 100;
+    epochs = 500;
     
     fprintf('Train twolayer perceptron with %d hidden units.\n', numberOfHiddenUnits);
     fprintf('Learning rate: %d.\n', learningRate);

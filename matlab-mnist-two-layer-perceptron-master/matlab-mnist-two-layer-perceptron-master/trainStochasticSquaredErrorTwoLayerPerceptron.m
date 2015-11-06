@@ -35,7 +35,7 @@ function [hiddenWeights, outputWeights, error, startTime, finalTime] = trainStoc
     hiddenWeights = hiddenWeights./size(hiddenWeights, 2);
     outputWeights = outputWeights./size(outputWeights, 2);
     
-    n = zeros(batchSize);
+    n = zeros(batchSize,1);
     inputVector(1:784,1:batchSize) = 0;
     figure; hold on;
     
