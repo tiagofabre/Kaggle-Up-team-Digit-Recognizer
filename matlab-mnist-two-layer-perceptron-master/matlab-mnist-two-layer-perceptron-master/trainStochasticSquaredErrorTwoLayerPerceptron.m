@@ -40,7 +40,7 @@ function [hiddenWeights, outputWeights, error, startTime, finalTime] = trainStoc
     figure; hold on;
     
     for k = 1: batchSize
-        n(k) = floor(rand(1)*trainingSetSize + 1);
+        n(k) = k;%floor(rand(1)*trainingSetSize + 1);
             
         % Propagate the input vector through the network.
         inputVector(:,k) = inputValues(:, n(k));
