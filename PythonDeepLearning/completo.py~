@@ -16,7 +16,7 @@ import time
 
 
 
-COMPONENT_NUM = 50
+COMPONENT_NUM = 35
 USE_PICKLE = False
 IMAGE_WIDTH = 28
 
